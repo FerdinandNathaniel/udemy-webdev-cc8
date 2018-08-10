@@ -1,3 +1,15 @@
+.body {
+    background: rgb(238, 238, 238);
+}
+
+/* Was already present in starter html as inline style, moved to css */
+.navbar .navbar-nav .nav-link:not(.btn) i.fa{
+    font-size: 18px;
+    position: relative;
+    top: 3px;
+    text-align: center;
+    width: 21px;
+  }
 
 .navbar-custom {
     background-color: rgb(238, 238, 238);
@@ -15,10 +27,17 @@
     max-height: 25px;
 }
 
-.content-center h1, h3 {
+.content-center h1, h4 {
     color: rgb(223, 41, 102);
-    font-weight: bold;
     background-color: rgb(19, 19, 19);
+}
+
+.content-center h2 {
+    font-weight: bold;
+}
+
+.content-center h4 {
+    text-decoration-line: line-through;
 }
 
 .content-center h1 {
