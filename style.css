@@ -1,0 +1,21 @@
+.body {
+    background: linear-gradient(white, rgba(255,255,255,0));
+}
+
+.navbar-custom {
+    background-color: rgb(238, 238, 238);
+}
+
+.navbar-container img {
+    max-height: 25px;
+}
+
+.content-center h1, h3 {
+    color: rgb(223, 41, 102);
+    font-weight: bold;
+    background-color: rgb(19, 19, 19);
+}
+
+.content-center h1 {
+    color: rgb(240, 233, 235);
+}
