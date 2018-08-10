@@ -6,6 +6,18 @@
     background-color: rgb(238, 238, 238);
 }
 
+.navbar-custom i {
+    color: rgb(19, 19, 19);
+}
+
+.navbar-custom a:hover i {
+    color: rgb(223, 41, 102);
+}
+
+.navbar-custom button {
+    color: rgb(19, 19, 19);
+}
+
 .navbar-container img {
     max-height: 25px;
 }
