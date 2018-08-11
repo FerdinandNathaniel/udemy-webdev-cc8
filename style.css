@@ -66,6 +66,12 @@
 }
 
 @media screen and (max-width: 991px) {
+    .how-to-image-container {
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 991px) {
     .sidebar-collapse .navbar-collapse:before {
         background: linear-gradient(rgb(223, 41, 102), rgb(231, 136, 48));
     }
