@@ -46,16 +46,23 @@
     background-color: rgb(19, 19, 19);
 }
 
-.content-center h2 {
-    font-weight: bold;
-}
-
-.content-center h4 {
-    text-decoration-line: line-through;
-}
-
 .content-center h1 {
     color: rgb(240, 233, 235);
+}
+
+.how-to-container img {
+    max-height: 400px;
+}
+
+.how-to-image-container{
+    display: flex;
+    justify-content: center;
+}
+
+.how-to-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width: 991px) {
