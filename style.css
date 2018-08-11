@@ -9,7 +9,21 @@
     top: 3px;
     text-align: center;
     width: 21px;
-  }
+}
+
+.button-read-more {
+    background-color: rgba(223, 41, 102, 0.9);
+    color: rgb(19, 19, 19);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.button-read-more:hover {
+    background-color: rgb(223, 41, 102);
+    color: rgb(19, 19, 19);
+    font-size: 18px;
+    font-weight: bold;
+}
 
 .navbar-custom {
     background-color: rgb(238, 238, 238);
