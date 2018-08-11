@@ -11,14 +11,14 @@
     width: 21px;
 }
 
-.button-read-more {
+.button-read-more, .button-read-more:focus  {
     background-color: rgba(223, 41, 102, 0.9);
     color: rgb(19, 19, 19);
     font-size: 18px;
     font-weight: bold;
 }
 
-.button-read-more:hover {
+.button-read-more:hover{
     background-color: rgb(223, 41, 102);
     color: rgb(19, 19, 19);
     font-size: 18px;
@@ -52,6 +52,7 @@
 
 .how-to-container img {
     max-height: 400px;
+    padding-top: 20px;
 }
 
 .how-to-image-container{
@@ -63,12 +64,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-@media screen and (max-width: 991px) {
-    .how-to-image-container {
-        padding-top: 10px;
-    }
 }
 
 @media screen and (max-width: 991px) {
