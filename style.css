@@ -11,15 +11,16 @@
     width: 21px;
 }
 
-.button-read-more, .button-read-more:focus  {
-    background-color: rgba(223, 41, 102, 0.9);
+.btn-primary:hover, .btn-primary:not(:disabled):not(.disabled):active:focus {
+    background-color: rgb(223, 41, 102);
     color: rgb(19, 19, 19);
     font-size: 18px;
     font-weight: bold;
+    box-shadow: none;
 }
 
-.button-read-more:hover{
-    background-color: rgb(223, 41, 102);
+.button-read-more, .button-read-more:focus, .button-read-more:active  {
+    background-color: rgba(223, 41, 102, 0.85);
     color: rgb(19, 19, 19);
     font-size: 18px;
     font-weight: bold;
@@ -53,6 +54,7 @@
 .how-to-container img {
     max-height: 400px;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .how-to-image-container{

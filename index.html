@@ -29,7 +29,7 @@
 <body class="index-page sidebar-collapse">
 
     <!-- Navbar -->
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top navbar-custom" color-on-scroll="400">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top navbar-custom">
         <div class="container navbar-container">
             <div class="navbar-translate">
                 <a class="navbar-brand" data-placement="bottom" href="index.html">
@@ -78,12 +78,12 @@
                     <img class="n-logo" src="./res/tinder-camera.png" alt="">
                     <h1 class="h1-seo">Image Tinder</h1>
                     <h4>Getting a quick in-depth look into your client's picture preferences</h4>
-                    <button class="btn btn-primary btn-round btn-lg button-read-more" type="button">Read More..</button>
+                    <button class="btn btn-primary btn-round btn-lg button-read-more" type="button" onclick="document.getElementById('main').scrollIntoView();">Read More..</button>
                 </div>
             </div>
         </div>
 
-        <div class="main">
+        <div class="main" id="main">
             <div class="section section-basic">
                 <div class="container text-center mt-5">
                     <h3 class="title">What?</h3>
@@ -153,5 +153,7 @@
 <script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/plugins/bootstrap-datepicker.js"></script>
 <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
 <script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/now-ui-kit.js"></script>
+<!-- Own Script -->
+<script src="script.js"></script>
 
 </html>
