@@ -68,8 +68,14 @@
     justify-content: center;
 }
 
-.sign-up-button {
+.sign-up-button, .sign-up-button:hover {
     background-color: rgb(223, 41, 102);
+    color: rgb(238, 238, 238);
+    font-size: 16px;
+}
+
+.sign-up-button:hover {
+    background-color: rgb(212, 107, 142);
     color: rgb(238, 238, 238);
     font-size: 16px;
 }
@@ -77,5 +83,9 @@
 @media screen and (max-width: 991px) {
     .sidebar-collapse .navbar-collapse:before {
         background: linear-gradient(rgb(223, 41, 102), rgb(231, 136, 48));
+    }
+
+    .sidebar-collapse a:hover i {
+        color: rgb(255, 255, 255);
     }
 }
