@@ -74,7 +74,7 @@
     font-size: 16px;
 }
 
-.sign-up-button:hover {
+.sign-up-button:active, .sign-up-button:hover, .sign-up-button:focus, .sign-up-button:not(:disabled):not(.disabled):active:focus {
     background-color: rgb(212, 107, 142);
     color: rgb(238, 238, 238);
     font-size: 16px;
