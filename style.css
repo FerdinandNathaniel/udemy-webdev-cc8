@@ -1,4 +1,13 @@
-.body, html {
+/* ========== Fonts ========== */
+
+@font-face {
+    font-family: 'futura hv bt';
+    src: url('./fonts/Futura Hv BT Heavy.ttf');
+}
+
+/* ========== Generics ========== */
+
+.body {
     height: 100%;
 }
 
@@ -78,17 +87,26 @@
 
 /* ========== Sign-up Card ========== */
 
-.sign-up-button, .sign-up-button:hover {
-    background-color: rgb(223, 41, 102);
+.sign-up-button, .sign-up-button:hover, .sign-up-button:active, .sign-up-button:hover, .sign-up-button:focus, .sign-up-button:not(:disabled):not(.disabled):active:focus {
     color: rgb(238, 238, 238);
     font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.sign-up-button, .sign-up-button:hover {
+    background-color: rgb(223, 41, 102);
 }
 
 .sign-up-button:active, .sign-up-button:hover, .sign-up-button:focus, .sign-up-button:not(:disabled):not(.disabled):active:focus {
     background-color: rgb(212, 107, 142);
-    color: rgb(238, 238, 238);
-    font-size: 16px;
 }
+
+/* Mailchimp */
+#mc_embed_signup {
+    background: #fff; 
+    clear: left; 
+    font: 14px Helvetica, Arial, sans-serif; }
 
 /* ========== Sidebar ========== */
 
@@ -106,6 +124,8 @@
 
 #parallax-color-asset-1 {
     background-image: url(./res/color-asset-1.svg);
+
+    font-family: 'futura hv bk', 'Lato', sans-serif;
 
     height: 500px;
 
