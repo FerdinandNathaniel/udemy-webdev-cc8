@@ -121,16 +121,29 @@
 }
 
 /* ========== Parallax ========== */
+@media screen and (max-width: 1155px) {
+    #parallax-color-asset-1 {
+        background-image: url(./res/color-asset-1.svg);
 
-#parallax-color-asset-1 {
-    background-image: url(./res/color-asset-1.svg);
+        height: 500px;
 
-    font-family: 'futura hv bk', 'Lato', sans-serif;
-
-    height: 500px;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
+
+@media screen and (min-width: 1155px) {
+    #parallax-color-asset-1 {
+        background-image: url(./res/color-asset-1.svg);
+    
+        height: 500px;
+    
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
