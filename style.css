@@ -1,6 +1,8 @@
-.body {
-    background: rgb(238, 238, 238);
+.body, html {
+    height: 100%;
 }
+
+/* ========== Navbar ========== */
 
 /* Was already present in starter html as inline style, moved to css */
 .navbar .navbar-nav .nav-link:not(.btn) i.fa{
@@ -9,21 +11,6 @@
     top: 3px;
     text-align: center;
     width: 21px;
-}
-
-.btn-primary:hover, .btn-primary:not(:disabled):not(.disabled):active:focus {
-    background-color: rgb(223, 41, 102);
-    color: rgb(19, 19, 19);
-    font-size: 18px;
-    font-weight: bold;
-    box-shadow: none;
-}
-
-.button-read-more, .button-read-more:focus, .button-read-more:active  {
-    background-color: rgba(223, 41, 102, 0.85);
-    color: rgb(19, 19, 19);
-    font-size: 18px;
-    font-weight: bold;
 }
 
 .navbar-custom {
@@ -42,6 +29,25 @@
     max-height: 25px;
 }
 
+/* ========== Center Button ========== */
+
+.btn-primary:hover, .btn-primary:not(:disabled):not(.disabled):active:focus {
+    background-color: rgb(223, 41, 102);
+    color: rgb(19, 19, 19);
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: none;
+}
+
+.button-read-more, .button-read-more:focus, .button-read-more:active  {
+    background-color: rgba(223, 41, 102, 0.85);
+    color: rgb(19, 19, 19);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ========== Center Content ========== */
+
 .content-center h1, h4 {
     color: rgb(223, 41, 102);
     background-color: rgb(19, 19, 19);
@@ -50,6 +56,8 @@
 .content-center h1 {
     color: rgb(240, 233, 235);
 }
+
+/* ========== How-to Content ========== */
 
 .how-to-container img {
     max-height: 400px;
@@ -68,8 +76,41 @@
     justify-content: center;
 }
 
+/* ========== Sign-up Card ========== */
+
+.sign-up-button, .sign-up-button:hover {
+    background-color: rgb(223, 41, 102);
+    color: rgb(238, 238, 238);
+    font-size: 16px;
+}
+
+.sign-up-button:active, .sign-up-button:hover, .sign-up-button:focus, .sign-up-button:not(:disabled):not(.disabled):active:focus {
+    background-color: rgb(212, 107, 142);
+    color: rgb(238, 238, 238);
+    font-size: 16px;
+}
+
+/* ========== Sidebar ========== */
+
 @media screen and (max-width: 991px) {
     .sidebar-collapse .navbar-collapse:before {
         background: linear-gradient(rgb(223, 41, 102), rgb(231, 136, 48));
     }
+
+    .sidebar-collapse a:hover i {
+        color: rgb(255, 255, 255);
+    }
+}
+
+/* ========== Parallax ========== */
+
+#parallax-color-asset-1 {
+    background-image: url(./res/color-asset-1.svg);
+
+    height: 500px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
