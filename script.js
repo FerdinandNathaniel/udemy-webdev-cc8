@@ -13,4 +13,3 @@
     ftypes[4]='phone';
 }
 (jQuery));
-var $mcj = jQuery.noConflict(true);
