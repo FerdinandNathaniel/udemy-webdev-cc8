@@ -85,6 +85,16 @@
     justify-content: center;
 }
 
+/* ========== Parallax background ========== */
+
+.draw-down-window {
+    
+    background: linear-gradient( 90deg, rgba(223, 41, 102, 0.8), rgba(231, 136, 48, 0.95) );
+    height: 500px;
+
+    will-change: transform;
+}
+
 /* ========== Sign-up Card ========== */
 
 .sign-up-button, .sign-up-button:hover, .sign-up-button:active, .sign-up-button:hover, .sign-up-button:focus, .sign-up-button:not(:disabled):not(.disabled):active:focus {
