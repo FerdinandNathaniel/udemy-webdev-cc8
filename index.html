@@ -13,6 +13,7 @@
 
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
 
     <!-- Bootstrap core CSS     -->
@@ -20,6 +21,9 @@
     <link href="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/css/now-ui-kit.min.css?v1.2.0" rel="stylesheet"
     />
     <link href="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/demo/demo.css" rel="stylesheet">
+
+    <!-- Mailchimp -->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
 
     <!-- Own CSS -->
     <link rel="stylesheet" href="style.css">
@@ -84,11 +88,8 @@
         </div>
 
         <div class="main" id="main">
-            <div class="section section-basic">
-                <div class="container text-center mt-5">
-                    <h3 class="title">What?</h3>
-                </div>
-            </div>
+
+            <div class="section section-basic"></div>
 
             <div id="parallax-color-asset-1"></div>
 
@@ -136,7 +137,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="card card-signup" data-background-color="black">
-                            <form class="form" method="" action="">
+                            <form class="validate form" method="post" action="https://fabfabcock.us18.list-manage.com/subscribe/post?u=2827e44788b277921810e97a0&amp;id=d7dbdccbef"
+                                name="mc-embedded-subscribe-form" target="_blank" novalidate>
                                 <div class="card-header text-center">
                                     <h3 class="card-title title-up">Sign Up</h3>
                                 </div>
@@ -147,7 +149,7 @@
                                                 <i class="now-ui-icons users_circle-08"></i>
                                             </span>
                                         </div>
-                                        <input type="text" class="form-control" placeholder="First Name...">
+                                        <input type="text" value="" name="FNAME" id="mce-FNAME" class="form-control" placeholder="First Name...">
                                     </div>
                                     <div class="input-group no-border">
                                         <div class="input-group-prepend">
@@ -155,7 +157,7 @@
                                                 <i class="now-ui-icons text_caps-small"></i>
                                             </span>
                                         </div>
-                                        <input type="text" placeholder="Last Name..." class="form-control" />
+                                        <input type="text" value="" name="LNAME" id="mce-LNAME" placeholder="Last Name..." class="form-control" />
                                     </div>
                                     <div class="input-group no-border">
                                         <div class="input-group-prepend">
@@ -163,11 +165,12 @@
                                                 <i class="now-ui-icons ui-1_email-85"></i>
                                             </span>
                                         </div>
-                                        <input type="text" class="form-control" placeholder="Email...">
+                                        <input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Email..." class="form-control required email">
                                     </div>
                                 </div>
                                 <div class="card-footer text-center">
-                                    <a href="#pablo" class="btn btn-round btn-lg sign-up-button">Get Started</a>
+                                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn-round btn-lg sign-up-button">
+                                    <!-- <a href="#pablo" class="btn btn-round btn-lg sign-up-button">Get Started</a> -->
                                 </div>
                             </form>
                         </div>
@@ -200,6 +203,8 @@
 <script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/plugins/bootstrap-datepicker.js"></script>
 <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
 <script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/now-ui-kit.js"></script>
+<!-- Mailchimp -->
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
 <!-- Own Script -->
 <script src="script.js"></script>
 
