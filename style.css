@@ -85,6 +85,16 @@
     justify-content: center;
 }
 
+/* ========== Parallax background ========== */
+
+.draw-down-window {
+    
+    background: linear-gradient( 90deg, rgba(223, 41, 102, 0.8), rgba(231, 136, 48, 0.95) );
+    height: 500px;
+
+    will-change: transform;
+}
+
 /* ========== Sign-up Card ========== */
 
 .sign-up-button, .sign-up-button:hover, .sign-up-button:active, .sign-up-button:hover, .sign-up-button:focus, .sign-up-button:not(:disabled):not(.disabled):active:focus {
@@ -125,12 +135,22 @@
 #parallax-color-asset-1 {
     background-image: url(./res/color-asset-1.svg);
 
-    font-family: 'futura hv bk', 'Lato', sans-serif;
-
-    height: 500px;
-
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@media screen and (max-width: 1155px) {
+    #parallax-color-asset-1 {
+        height: 250px;
+    }
+}
+
+@media screen and (min-width: 1155px) {
+    #parallax-color-asset-1 {
+        height: 500px;
+        background-size: contain;
+    }
+}
+
