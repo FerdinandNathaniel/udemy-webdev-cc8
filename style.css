@@ -77,12 +77,27 @@
 .how-to-image-container{
     display: flex;
     justify-content: center;
+    z-index: 2;
 }
 
 .how-to-text-container {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.how-to-splash-image {
+    position: relative;
+
+    bottom: 800px;
+    margin-bottom: -800px;
+    left: 600px;
+    
+    z-index: 1;
+}
+
+.how-to-splash-image img {
+    max-height: 1000px;
 }
 
 /* ========== Parallax background ========== */
