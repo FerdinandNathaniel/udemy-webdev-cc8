@@ -14,13 +14,13 @@
 }
   (jQuery));
 
-// Email Set-up, making fields required
+/* ========== Email Set-up, making fields required ========== */
 // TO-DO: make this work, doesn't atm
 document.getElementById("mce-EMAIL").required = true;
 document.getElementById('mce-FNAME').required = true;
 document.getElementById('mce-LNAME').required = true;
 
-// Creating various scroll speeds
+/* ========== Creating various scroll speeds ========== */
 $.fn.moveIt = function () {
   var $window = $(window);
   var instances = [];
@@ -49,4 +49,46 @@ moveItItem.prototype.update = function (scrollTop) {
 // Initialization
 $(function () {
   $('[data-scroll-speed]').moveIt();
+});
+
+/* ========== Check if element is in visible viewport ========== */
+(function ($) {
+
+  /**
+   * Copyright 2012, Digital Fusion
+   * Licensed under the MIT license.
+   * http://teamdf.com/jquery-plugins/license/
+   *
+   * @author Sam Sehnert
+   * @desc A small plugin that checks whether elements are within
+   *     the user visible viewport of a web browser.
+   *     only accounts for vertical position, not horizontal.
+   */
+
+  $.fn.visible = function (partial) {
+
+    var $t = $(this),
+      $w = $(window),
+      viewTop = $w.scrollTop(),
+      viewBottom = viewTop + $w.height(),
+      _top = $t.offset().top,
+      _bottom = _top + $t.height(),
+      compareTop = partial === true ? _bottom : _top,
+      compareBottom = partial === true ? _top : _bottom;
+
+    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+  };
+
+})(jQuery);
+
+$(window).scroll(function(event) {
+  
+  $(".module").each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } 
+  });
+  
 });
